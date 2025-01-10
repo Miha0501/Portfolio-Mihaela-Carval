@@ -4,7 +4,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    text-align: center;
+    align-items: center;
     gap: 10px;
     padding: 16px;
     font-family: $font-family;
@@ -15,4 +15,18 @@
         font-size: 36px;
         margin-top: 30px;
     }
+.about_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    .speech {
+        font-size: 17px;
+        color: black;
+        font-weight: 510;
+        max-width: 50%;
+        text-align: center;
+    }
+}
 }

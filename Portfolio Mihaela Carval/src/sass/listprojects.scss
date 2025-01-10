@@ -8,11 +8,12 @@
     justify-content: center;
     gap: 36px;
     background-color: whitesmoke;
+    font-family: $font-family;
 
     h2 {
         margin-bottom: 36px;
         font-size: 36px;
-        color: #0A2540;
+        color: $setions-background-color;
     }
 
     .projects_container{

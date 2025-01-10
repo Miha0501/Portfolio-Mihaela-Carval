@@ -6,6 +6,7 @@
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   width: 20%;
+  height: 100%;
   margin:0;
   font-family: $font-family;
   
@@ -22,7 +23,8 @@
   
         .card-title {
           margin: 0;
-          font-size: 1.25rem;
+          font-size: 20px;
+          color:$setions-background-color
         }
   
       }
@@ -36,9 +38,10 @@
     }
   
     .card-content {
-      padding: 16px;
-      font-size: 0.9rem;
-      color: #333;
+      padding: 10px;
+      font-size: 14px;
+      font-weight: 700;
+      color: #0073e6;
     }
   
     .card-actions {

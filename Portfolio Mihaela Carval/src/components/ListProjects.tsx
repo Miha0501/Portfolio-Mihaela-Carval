@@ -9,7 +9,7 @@ interface jobs {
 }
 const ListProjects: React.FC = () => {
   return (
-    <Section id="portfolio" title="PROJECTS">
+    <Section id="portfolio" title="PROJETS">
       <div className="projects_container">
         {jobs.map((elt, index) => <ProjectCard key={index} {...elt} />)}
       </div>
