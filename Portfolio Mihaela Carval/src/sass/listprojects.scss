@@ -1,0 +1,26 @@
+@import './variables.scss';
+
+#portfolio {
+    text-align: center;
+    padding: 36px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 36px;
+    background-color: whitesmoke;
+
+    h2 {
+        margin-bottom: 36px;
+        font-size: 36px;
+        color: #0A2540;
+    }
+
+    .projects_container{
+        display: flex !important;
+            flex-wrap: wrap !important;
+            justify-content: center !important;
+            width: 100%;
+            align-items: center;
+            gap: 30px;
+        }
+    }

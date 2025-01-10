@@ -1,0 +1,47 @@
+@import './variables.scss';
+
+#presentation {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+    padding: 16px;
+    font-family: $font-family;
+    background-color: $setions-background-color;
+    margin: 10px;
+
+    h2 {
+        color: #deeaf9;
+        font-size: 45px;
+        margin-top: 30px;
+    }
+
+    h3 {
+        color:white;
+        font-size: 25px;
+    }
+
+    .buttons_container {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        padding: 20px;
+
+        button {
+            background: linear-gradient(45deg, #0056A6, #0096FF);
+            color: white;
+            border-radius: 50px;
+            border: none;
+            padding: 10px 30px;
+            font-size: 17px;
+            cursor: pointer;
+            transition: transform 0.2s;
+
+            &:hover {
+                    background: linear-gradient(45deg, #0073D8, #58A6FF);
+                    transform: scale(1.05);
+            }
+        }
+    }
+}
