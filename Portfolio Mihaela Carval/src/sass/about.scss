@@ -15,18 +15,71 @@
         font-size: 36px;
         margin-top: 30px;
     }
-.about_container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
 
-    .speech {
-        font-size: 17px;
-        color: black;
-        font-weight: 510;
-        max-width: 50%;
-        text-align: center;
+    .about_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        padding: 20px;
+
+        .soft_skills {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+            padding: 20px;
+
+            .soft_skills_title {
+                font-size: 24px;
+                font-weight: bold;
+                color: #0A2540;
+                margin-bottom: 20px;
+            }
+
+            .soft_skills_items {
+                display: flex;
+                justify-content: center;
+                gap: 20px;
+                flex-wrap: wrap;
+
+                .soft_skill {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    justify-content: center;
+                    padding: 10px;
+                    width: 100px;
+                    height: 100px;
+                    border-radius: 10px;
+                    background-color: #a3c4e5;
+                    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+                    transition: transform 0.3s ease;
+
+                    &:hover {
+                        transform: scale(1.1);
+                    }
+
+                    .soft_skill_icon {
+                        margin-bottom: 10px;
+                    }
+
+                    .soft_skill_label {
+                        font-size: 14px;
+                        font-weight: 510;
+                        color: #333;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+        .speech {
+            font-size: 17px;
+            color: black;
+            font-weight: 510;
+            max-width: 50%;
+            text-align: center;
+        }
     }
-}
 }
