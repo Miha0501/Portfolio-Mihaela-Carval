@@ -1,5 +1,4 @@
-// import { useState } from 'react'
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter } from "react-router-dom";
 import Header from'./components/Header';
 import Footer from './components/Footer';
 import ContactForm from './components/ContactForm';

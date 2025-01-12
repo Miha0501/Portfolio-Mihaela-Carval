@@ -1,26 +1,30 @@
 [
     {
         "title": "Booki",
-        "cover": "projects/booki.jpg",
-        "tech": "HTML CSS",
+        "cover": "projects/booki.webp",
+        "altImage": "Photo avec la page d'accueil de l'agence de voyage Booki",
+        "tech": "HTML  CSS",
         "description":"Intégration d'une interface responsive pour la page d'accueil de l'agence de voyage"
     },
     {
         "title": "Sophie Bruel",
-        "cover": "projects/sophiebruel.jpg",
-        "tech":"Javascript HTML CSS",
+        "cover": "projects/sophiebruel.webp",
+        "altImage": "Photo avec la page d'accueil de l'architecte Sophie Bruel",
+        "tech":"Javascript  HTML CSS",
         "description": "Création d'une page web dynamique avec JavaScript en communiquant avec un API"
     },
     {
         "title": "Kasa",
-        "cover": "projects/kasa.jpg",
-        "tech":"React SASS",
+        "cover": "projects/kasa.webp",
+        "altImage": "Photo avec la page d'accueil de l'application web Kasa",
+        "tech":"React  SASS",
         "description":"Création d'une application web de location immobilière avec React et stylisation avec SASS"
     },
     {
         "title": "Mon vieux Grimoire",
-        "cover": "projects/monvieuxgrimoire.jpg",
-        "tech":"NodeJs ExpressJs MongoDB",
+        "cover": "projects/monvieuxgrimoire.webp",
+        "altImage": "Photo avec la page d'accueil du site de notation des livres Mon Vieux Grimoire",
+        "tech":"NodeJs  ExpressJs  MongoDB",
         "description":"Développment du backend d'un site de notation des livres avec création d'un serveur avec Express et d'une API pour la communication avec la base des données MongoDB"
     }
 ]

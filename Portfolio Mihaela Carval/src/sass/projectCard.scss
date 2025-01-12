@@ -1,4 +1,4 @@
-@import './variables.scss';
+@use './variables.scss' as *;
 
 .card {
   border: 1px solid #ddd;
@@ -24,7 +24,7 @@
         .card-title {
           margin: 0;
           font-size: 20px;
-          color:$setions-background-color
+          color:$second-background-color
         }
   
       }
@@ -39,9 +39,9 @@
   
     .card-content {
       padding: 10px;
-      font-size: 14px;
+      font-size: 15px;
       font-weight: 700;
-      color: #0073e6;
+      color: #0467ca;
     }
   
     .card-actions {

@@ -1,4 +1,4 @@
-@import './variables.scss';
+@use './variables.scss' as *;
 
 .collapse {
     border-radius: 5px;
@@ -6,7 +6,7 @@
     font-family: $font-family;
   
     .collapse-header {
-      background-color: whitesmoke;
+      background-color: $first-background-color;
       display: flex;
       align-items: center;
       justify-content: center;

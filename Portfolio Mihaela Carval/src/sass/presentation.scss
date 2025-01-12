@@ -1,4 +1,4 @@
-@import './variables.scss';
+@use './variables.scss' as *;
 
 #presentation {
     display: flex;
@@ -8,18 +8,28 @@
     gap: 30px;
     padding: 16px;
     font-family: $font-family;
-    background-color: $setions-background-color;
+    background-color: $second-background-color;
     margin: 10px;
+    @media (max-width: 767px) {
+        margin:5px;
+        border-radius: 10px;
+    }
 
     h2 {
-        color: #deeaf9;
+        color: $h2-presentation;
         font-size: 45px;
         margin-top: 30px;
+        @media (max-width: 767px) {
+            font-size: 30px;
+        }
     }
 
     h3 {
         color:white;
         font-size: 25px;
+        @media (max-width: 767px) {
+            font-size: 22px;
+        }
     }
 
     .buttons_container {
@@ -27,8 +37,17 @@
         justify-content: center;
         gap: 50px;
         padding: 20px;
+        @media (max-width: 767px) {
+            gap: 30px;
+            padding: 0px 10px;
+        }
 
         button {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 250px;
+            gap:10px;
             background: linear-gradient(45deg, #0056A6, #0096FF);
             color: white;
             border-radius: 50px;
@@ -37,6 +56,11 @@
             font-size: 17px;
             cursor: pointer;
             transition: transform 0.2s;
+            @media (max-width: 767px) {
+                font-size: 12px;
+                padding: 10px;
+                width: 100%;
+            }
 
             &:hover {
                     background: linear-gradient(45deg, #0073D8, #58A6FF);

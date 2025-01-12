@@ -1,4 +1,4 @@
-@import './variables.scss';
+@use './variables.scss' as *;
 
 #portfolio {
     text-align: center;
@@ -7,13 +7,13 @@
     flex-direction: column;
     justify-content: center;
     gap: 36px;
-    background-color: whitesmoke;
+    background-color: $first-background-color;
     font-family: $font-family;
 
     h2 {
         margin-bottom: 36px;
         font-size: 36px;
-        color: $setions-background-color;
+        color: $second-background-color;
     }
 
     .projects_container{

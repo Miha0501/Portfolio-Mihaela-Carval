@@ -5,11 +5,12 @@ import '../sass/projectCard.scss';
 interface ProjectCardProps {
   title: string;
   cover: string;
+  altImage: string;
   tech: string;
   description: string;
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ title, cover, tech, description }) => {
+const ProjectCard: React.FC<ProjectCardProps> = ({ title, cover, altImage, tech, description }) => {
   return (
     <div className="card">
       <div className="card-header">
@@ -19,7 +20,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, cover, tech, descripti
       </div>
 
       <img
-        className="card-media" src={`/${cover}`} alt="Photo avec la page d'accueil" />
+        className="card-media" src={`/${cover}`} alt={altImage} />
       <div className="card-content">
         <p>{tech}</p>
       </div>

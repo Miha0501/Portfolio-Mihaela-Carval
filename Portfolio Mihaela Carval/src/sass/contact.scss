@@ -1,4 +1,4 @@
-@import './variables.scss';
+@use './variables.scss' as *;
 
 #contact {
   display: flex;
@@ -8,8 +8,9 @@
   width: 100%;
   gap: 20px;
   padding: 0;
+  margin:10px;
   font-family: $font-family;
-  background-color: $setions-background-color;
+  background-color: $second-background-color;
 
   h2 {
     color: #deeaf9;
