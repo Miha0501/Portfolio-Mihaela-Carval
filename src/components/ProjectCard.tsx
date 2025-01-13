@@ -1,5 +1,5 @@
-import { useState } from 'react';
 import Collapse from './Collapse';
+import { FaGithub } from 'react-icons/fa';
 import '../sass/projectCard.scss';
 
 interface ProjectCardProps {
@@ -27,6 +27,9 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, cover, altImage, tech,
       <div className="card-actions">
         <Collapse>
           <p>{description}</p>
+                  <a href="https://github.com/Miha0501" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                    <FaGithub size={24} />
+                  </a>
         </Collapse>
       </div>
     </div>

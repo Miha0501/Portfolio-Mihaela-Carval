@@ -2,7 +2,7 @@
 
 #portfolio {
     text-align: center;
-    padding: 36px;
+    padding: 36px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -14,14 +14,23 @@
         margin-bottom: 36px;
         font-size: 36px;
         color: $second-background-color;
+        @media (max-width: 767px) {
+            font-size: 22px;
+            margin-bottom: 0;
+        }
     }
 
     .projects_container{
         display: flex !important;
-            flex-wrap: wrap !important;
-            justify-content: center !important;
-            width: 100%;
-            align-items: center;
-            gap: 30px;
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        gap: 30px;
+        @media (max-width: 767px) {
+        flex-direction: column;
+        padding: 0 20px;
+        }
         }
     }

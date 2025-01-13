@@ -10,19 +10,25 @@ footer {
   color: white;
   font-family: $font-family;
 
-.social_links {
-  display: flex;
-  justify-content: center;
-  text-align: center;
+  @media (max-width: 767px) {
+    flex-direction: column-reverse;
+    gap: 10px;
+    font-size: 13px;
+  }
 
-  a {
-    color: white;
-    margin: 0 15px;
-    text-decoration: none;
+  .social_links {
+    display: flex;
+    justify-content: center;
+    text-align: center;
 
-    &:hover {
-      color: grey;
+    a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+
+      &:hover {
+        color: grey;
+      }
     }
   }
-}
 }

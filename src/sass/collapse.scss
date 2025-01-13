@@ -1,47 +1,66 @@
 @use './variables.scss' as *;
 
 .collapse {
-    border-radius: 5px;
-    overflow: hidden;
-    font-family: $font-family;
-  
-    .collapse-header {
-      background-color: $first-background-color;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 20px;
-      cursor: pointer;
-  
-      .arrow {
-        width: 15px;
-        height: 15px;
-        border: solid black;
-        border-width: 0 3px 3px 0;
-        transform: rotate(-135deg);
-        transition: transform 0.3s ease;
-  
-        &.open {
-          transform: rotate(-315deg);
-        }
-      }
-    }
-  
-    .collapse-content {
-      max-height: 0;
-      overflow: hidden;
-      transition: max-height 0.3s ease, padding 0.3s ease;
-      padding: 0 17px;
+  border-radius: 5px;
+  overflow: hidden;
+  font-family: $font-family;
 
-      p {
-        font-size: 18px;
+  .collapse-header {
+    background-color: $first-background-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    cursor: pointer;
+
+    .arrow {
+      width: 15px;
+      height: 15px;
+      border: solid black;
+      border-width: 0 3px 3px 0;
+      transform: rotate(-135deg);
+      transition: transform 0.3s ease;
+
+      @media (max-width: 767px) {
+        width: 12px;
+        height: 12px;
       }
-  
-      &.show {
-        background-color: #F6F6F673;
-        max-height: 300px; 
-        padding: 1rem;
-        font-size: 13px;
+
+      &.open {
+        transform: rotate(-315deg);
       }
     }
   }
+
+  .collapse-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+    padding: 0 17px;
+
+    p {
+      font-size: 18px;
+
+      @media (max-width: 767px) {
+        font-size: 13px;
+      }
+    }
+
+    &.show {
+      display: flex;
+      flex-direction: column;
+      gap:10px;
+      background-color: #F6F6F673;
+      max-height: 300px;
+      padding: 16px;
+
+      a {
+        color:black;
+      }
+
+      @media (max-width: 767px) {
+        padding: 10px;
+      }
+    }
+  }
+}
