@@ -8,9 +8,10 @@ interface ProjectCardProps {
   altImage: string;
   tech: string;
   description: string;
+  siteURL: string;
 }
 
-const ProjectCard: React.FC<ProjectCardProps> = ({ title, cover, altImage, tech, description }) => {
+const ProjectCard: React.FC<ProjectCardProps> = ({ title, cover, altImage, tech, description, siteURL }) => {
   return (
     <div className="card">
       <div className="card-header">
@@ -27,7 +28,7 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, cover, altImage, tech,
       <div className="card-actions">
         <Collapse>
           <p>{description}</p>
-                  <a href="https://github.com/Miha0501" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                  <a href={siteURL} target="_blank" rel="noopener noreferrer" aria-label="GitHub">
                   <span>Consultez mon Github </span>
                     <FaGithub size={24} />
                   </a>
