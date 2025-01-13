@@ -62,13 +62,24 @@
       }
     }
 
+    .message_sent {
+      background-color: #deeaf9;
+      font-family: "Montserrat", sans-serif;
+      color: #e30606;
+      border-radius: 40px;
+      padding: 10px;
+      text-align: center;
+      @media (max-width: 767px) {
+        font-size: 12px;
+      }
+  }
+
     form {
       display: flex;
       flex-direction: column;
       gap: 16px;
       width: 50%;
       margin-left: 50px;
-
       @media (max-width: 767px) {
         margin-left: 0;
         width: 100%;
@@ -80,9 +91,9 @@
         border: 1px solid black;
         border-radius: 25px;
         font-size: 18px;
-
+        font-family: $font-family;
         @media (max-width: 767px) {
-          font-size: 13px;
+          font-size: 12px;
         }
 
         &::placeholder {
