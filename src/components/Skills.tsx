@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from 'react';
 import '../sass/skills.scss';
 
 const Skills: React.FC = () => {
@@ -13,11 +14,21 @@ const Skills: React.FC = () => {
     { src: "logoTech/agileLogo.webp", title:"Méthodologie AGILE", alt: "Agile" },
   ];
 
+  const [visibleLogos, setVisibleLogos]=useState<number>(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setVisibleLogos((prev) => (prev < logos.length ? prev + 1 : prev));
+    }, 300);
+
+    return () => clearInterval(interval);
+  }, [logos.length]);
+
   return (
     <div className="skills">
       <h3>Mes compétences</h3>
       <div className="skills_container">
-        {logos.map((logo, index) => (<div key={index} className="skill">
+        {logos.map((logo, index) => (<div key={index} className={`skill ${index < visibleLogos ? 'visible' : 'hidden'}`}>
           <img src={logo.src} alt={logo.alt} loading="lazy"/>
           <span className="skill_title">{logo.title}</span>
           </div>
