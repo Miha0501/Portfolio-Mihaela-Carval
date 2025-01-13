@@ -10,8 +10,10 @@
     font-family: $font-family;
     background-color: $second-background-color;
     margin: 10px;
+    margin-top: 80px;
     @media (max-width: 767px) {
         margin:5px;
+        margin-top: 75px;
         border-radius: 10px;
     }
 

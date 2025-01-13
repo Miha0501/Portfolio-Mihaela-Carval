@@ -5,7 +5,10 @@ header {
     background-color: $first-background-color;
     font-family: $font-family;
     font-weight: 700;
-
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
     nav ul {
         display: flex;
         justify-content: center;
