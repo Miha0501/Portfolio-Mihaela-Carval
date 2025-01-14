@@ -1,11 +1,11 @@
-import '../sass/contact.scss';
 import Section from './Section';
 import React from "react";
+import '../sass/contact.scss';
 
 const ContactForm: React.FC = () => {
   const [result, setResult] = React.useState<string>("");
 
-  const onSubmit = async (event:React.FormEvent<HTMLFormElement>) => {
+  const onSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     setResult("Sending....");
     const form = event.currentTarget;
@@ -38,8 +38,8 @@ const ContactForm: React.FC = () => {
           <div className='image_form'>
             <img src="imageContact/logoWorkTogether.webp" alt="Logo Work Together" loading="lazy" />
           </div>
-          <form action="https://api.web3forms.com/submit" method="POST" onSubmit={onSubmit}>
-            <input type="hidden" name="access_key" value={import.meta.env.VITE_ACCES_FORM || ""}/>
+          <form onSubmit={onSubmit}>
+            <input type="hidden" name="access_key" value={import.meta.env.VITE_ACCES_FORM || ""} />
             <input type="text" name="name" placeholder="Votre nom" aria-label='Votre nom' required />
             <input type="email" name="email" placeholder="Votre email" aria-label='Votre adresse mail' required />
             <textarea name="message" placeholder="Votre message" rows={5} aria-label='Votre message' required />

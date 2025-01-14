@@ -1,4 +1,4 @@
-import { ReactNode } from 'react'; // voir avec Dylan
+import { ReactNode } from 'react';
 
 interface SectionProps {
     title: string;

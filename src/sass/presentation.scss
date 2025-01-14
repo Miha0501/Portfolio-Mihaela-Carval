@@ -6,29 +6,24 @@
     justify-content: center;
     text-align: center;
     gap: 30px;
-    padding: 16px;
+    padding: 85px 16px 16px 16px;
     font-family: $font-family;
     background-color: $second-background-color;
-    margin: 10px;
-    margin-top: 80px;
-    @media (max-width: 767px) {
-        margin:5px;
-        margin-top: 75px;
-        border-radius: 10px;
-    }
 
     h2 {
         color: $h2-presentation;
         font-size: 45px;
         margin-top: 30px;
+
         @media (max-width: 767px) {
             font-size: 30px;
         }
     }
 
     h3 {
-        color:white;
+        color: white;
         font-size: 25px;
+
         @media (max-width: 767px) {
             font-size: 22px;
         }
@@ -39,17 +34,16 @@
         justify-content: center;
         gap: 50px;
         padding: 20px;
+
         @media (max-width: 767px) {
             gap: 30px;
             padding: 0px 10px;
         }
 
         button {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            @include flex-row;
             width: 250px;
-            gap:10px;
+            gap: 10px;
             background: linear-gradient(45deg, #0056A6, #0096FF);
             color: white;
             border-radius: 50px;
@@ -58,6 +52,7 @@
             font-size: 17px;
             cursor: pointer;
             transition: transform 0.2s;
+
             @media (max-width: 767px) {
                 font-size: 12px;
                 padding: 10px;
@@ -65,8 +60,8 @@
             }
 
             &:hover {
-                    background: linear-gradient(45deg, #0073D8, #58A6FF);
-                    transform: scale(1.05);
+                background: linear-gradient(45deg, #0073D8, #58A6FF);
+                transform: scale(1.05);
             }
         }
     }

@@ -1,12 +1,9 @@
 @use './variables.scss' as *;
 
 #about {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flex-column;
     gap: 10px;
-    padding: 16px;
+    padding: 40px 16px 16px 16px;
     font-family: $font-family;
     background-color: $first-background-color;
 
@@ -14,6 +11,7 @@
         color: #0A2540;
         font-size: 36px;
         margin-top: 30px;
+
         @media (max-width: 767px) {
             font-size: 22px;
             margin-top: 20px;
@@ -21,20 +19,17 @@
     }
 
     .about_container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        @include flex-row;
         width: 100%;
         padding: 20px;
 
         .soft_skills {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            @include flex-column;
             gap: 30px;
             padding: 20px;
+
             @media (max-width: 767px) {
-                padding:0;
+                padding: 0;
             }
 
             .soft_skills_items {
@@ -42,15 +37,13 @@
                 justify-content: center;
                 gap: 20px;
                 flex-wrap: wrap;
+
                 @media (max-width: 767px) {
                     justify-content: space-around;
                 }
 
                 .soft_skill {
-                    display: flex;
-                    flex-direction: column;
-                    align-items: center;
-                    justify-content: center;
+                    @include flex-column;
                     padding: 10px;
                     width: 100px;
                     height: 100px;
@@ -83,6 +76,7 @@
             font-weight: 510;
             width: 60%;
             text-align: center;
+
             @media (max-width: 767px) {
                 font-size: 12px;
                 text-align: justify;

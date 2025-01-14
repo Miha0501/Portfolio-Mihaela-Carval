@@ -1,4 +1,3 @@
-// import { Link } from'react-router-dom';
 import '../sass/header.scss';
 
 const Header: React.FC = () => {
@@ -6,7 +5,6 @@ const Header: React.FC = () => {
     <header>
       <nav>
         <ul>
-          {/* <li><Link to="/">Accueil</Link></li> */}
           <li><a href="#presentation">Accueil</a></li>
           <li><a href="#about">À propos</a></li>
           <li><a href="#portfolio">Portfolio</a></li>

@@ -2,7 +2,7 @@
 
 #portfolio {
     text-align: center;
-    padding: 36px 0;
+    padding: 75px 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -10,17 +10,22 @@
     background-color: $first-background-color;
     font-family: $font-family;
 
+    @media (max-width: 767px) {
+        padding: 75px 0 25px 0;
+    }
+
     h2 {
         margin-bottom: 36px;
         font-size: 36px;
         color: $second-background-color;
+
         @media (max-width: 767px) {
             font-size: 22px;
             margin-bottom: 0;
         }
     }
 
-    .projects_container{
+    .projects_container {
         display: flex !important;
         flex-wrap: wrap !important;
         justify-content: center !important;
@@ -28,9 +33,10 @@
         height: 100%;
         align-items: center;
         gap: 30px;
+
         @media (max-width: 767px) {
-        flex-direction: column;
-        padding: 0 20px;
-        }
+            flex-direction: column;
+            padding: 0 20px;
         }
     }
+}

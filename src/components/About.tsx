@@ -39,12 +39,12 @@ const About: React.FC = () => {
                 <div className="soft_skill_label">Enthousiaste</div>
               </div>
             </div>
-            <Speech/>
+            <Speech />
           </div>
-          </div>
-          <Skills />
+        </div>
+        <Skills />
       </Section>
-      
+
     </>
   );
 };

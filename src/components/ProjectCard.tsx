@@ -28,10 +28,10 @@ const ProjectCard: React.FC<ProjectCardProps> = ({ title, cover, altImage, tech,
       <div className="card-actions">
         <Collapse>
           <p>{description}</p>
-                  <a href={siteURL} target="_blank" rel="noopener noreferrer" aria-label="GitHub">
-                  <span>Consultez mon Github </span>
-                    <FaGithub size={24} />
-                  </a>
+          <a href={siteURL} target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+            <span>Consultez mon Github </span>
+            <FaGithub size={24} />
+          </a>
         </Collapse>
       </div>
     </div>
