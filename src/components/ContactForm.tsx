@@ -38,7 +38,7 @@ const ContactForm: React.FC = () => {
           <div className='image_form'>
             <img src="imageContact/logoWorkTogether.webp" alt="Logo Work Together" loading="lazy" />
           </div>
-          <form onSubmit={onSubmit}>
+          <form action="https://api.web3forms.com/submit" method="POST" onSubmit={onSubmit}>
             <input type="hidden" name="access_key" value={import.meta.env.VITE_ACCES_FORM || ""}/>
             <input type="text" name="name" placeholder="Votre nom" aria-label='Votre nom' required />
             <input type="email" name="email" placeholder="Votre email" aria-label='Votre adresse mail' required />
