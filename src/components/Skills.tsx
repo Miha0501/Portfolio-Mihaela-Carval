@@ -3,15 +3,15 @@ import '../sass/skills.scss';
 
 const Skills: React.FC = () => {
   const logos = [
-    { src: "logoTech/htmlLogo.webp", title: "HTML", alt: "HTML" },
-    { src: "logoTech/cssLogo.webp", title: "CSS", alt: "CSS" },
-    { src: "logoTech/jsLogo.webp", title: "JAVASCRIPT", alt: "JavaScript" },
-    { src: "logoTech/reactLogo.webp", title: "REACT", alt: "React" },
-    { src: "logoTech/sassLogo.webp", title: "SASS", alt: "Sass" },
-    { src: "logoTech/githubLogo.webp", title: "GIT HUB", alt: "Github" },
-    { src: "logoTech/nodeLogo.webp", title: "NODE JS", alt: "Nodejs" },
-    { src: "logoTech/expressLogo.webp", title: "EXPRESS JS", alt: "Expressjs" },
-    { src: "logoTech/agileLogo.webp", title: "Méthodologie AGILE", alt: "Agile" },
+    { src: "logoTech/htmlLogo.webp", title: "HTML", alt: "Compétences en HTML" },
+    { src: "logoTech/cssLogo.webp", title: "CSS", alt: "Compétences en CSS" },
+    { src: "logoTech/jsLogo.webp", title: "JAVASCRIPT", alt: "Compétences en JavaScript" },
+    { src: "logoTech/reactLogo.webp", title: "REACT", alt: "Compétences en React" },
+    { src: "logoTech/sassLogo.webp", title: "SASS", alt: "Compétences en Sass" },
+    { src: "logoTech/githubLogo.webp", title: "GIT HUB", alt: "Compétences en Github" },
+    { src: "logoTech/nodeLogo.webp", title: "NODE JS", alt: "Compétences en Nodejs" },
+    { src: "logoTech/expressLogo.webp", title: "EXPRESS JS", alt: "Compétences en Expressjs" },
+    { src: "logoTech/agileLogo.webp", title: "Méthodologie AGILE", alt: "Compétences en Agile" },
   ];
 
   const [visibleLogos, setVisibleLogos] = useState<number>(0);

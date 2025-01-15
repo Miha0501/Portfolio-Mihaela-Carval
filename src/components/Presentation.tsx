@@ -7,7 +7,7 @@ const Presentation: React.FC = () => {
         <Section id="presentation" title="Hello! Je suis Mihaela CARVAL">
             <h3>Développeuse web</h3>
             <div className='buttons_container'>
-                <button onClick={() => window.location.href = '/cv.pdf'}>
+                <button onClick={() => window.location.href = '/cvportfolio/cv.pdf'}>
                     <FaDownload /> Télécharger CV
                 </button>
                 <button onClick={() => window.open('https://github.com/Miha0501', '_blank', 'noopener,noreferrer')}>
