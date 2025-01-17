@@ -1,10 +1,10 @@
 import Section from './Section';
 import Skills from './Skills';
 import Speech from './Speech';
-import { GiBatteries } from "react-icons/gi";
-import { FcIdea } from "react-icons/fc";
-import { TfiCommentsSmiley } from "react-icons/tfi";
-import { FaCalendarCheck } from "react-icons/fa";
+import { GiBatteries } from 'react-icons/gi';
+import { FcIdea } from 'react-icons/fc';
+import { TfiCommentsSmiley } from 'react-icons/tfi';
+import { FaCalendarCheck } from 'react-icons/fa';
 import '../sass/about.scss';
 
 const About: React.FC = () => {

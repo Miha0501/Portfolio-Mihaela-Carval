@@ -8,9 +8,9 @@ const Skills: React.FC = () => {
     { src: "logoTech/jsLogo.webp", title: "JAVASCRIPT", alt: "Compétences en JavaScript" },
     { src: "logoTech/reactLogo.webp", title: "REACT", alt: "Compétences en React" },
     { src: "logoTech/sassLogo.webp", title: "SASS", alt: "Compétences en Sass" },
-    { src: "logoTech/githubLogo.webp", title: "GIT HUB", alt: "Compétences en Github" },
-    { src: "logoTech/nodeLogo.webp", title: "NODE JS", alt: "Compétences en Nodejs" },
-    { src: "logoTech/expressLogo.webp", title: "EXPRESS JS", alt: "Compétences en Expressjs" },
+    { src: "logoTech/githubLogo.webp", title: "GITHUB", alt: "Compétences en Github" },
+    { src: "logoTech/nodeLogo.webp", title: "NODE", alt: "Compétences en Nodejs" },
+    { src: "logoTech/expressLogo.webp", title: "EXPRESS", alt: "Compétences en Expressjs" },
     { src: "logoTech/agileLogo.webp", title: "Méthodologie AGILE", alt: "Compétences en Agile" },
   ];
 

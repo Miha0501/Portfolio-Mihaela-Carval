@@ -26,9 +26,16 @@
     display: flex;
     justify-content: space-between;
     padding: 15px;
-    width: 70%;
+    gap:35px;
 
     @media (max-width: 767px) {
+      width: 100%;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+    }
+
+    @media (min-width: 768px) and (max-width: 1024px) {
       width: 100%;
       flex-wrap: wrap;
       gap: 10px;
@@ -47,6 +54,10 @@
         width: 30%;
       }
 
+      @media (min-width: 768px) and (max-width: 1024px) {
+        width: 30%;
+      }
+
       img {
         width: 100%;
         max-width: 100px;
@@ -61,7 +72,7 @@
 
       .skill_title {
         position: absolute;
-        bottom: -35px;
+        bottom: -36px;
         left: 50%;
         transform: translateX(-50%);
         color: black;
@@ -69,7 +80,6 @@
         font-size: 14px;
         background-color: rgba(255, 255, 255, 0.8);
         padding: 2px 6px;
-        ;
         opacity: 0;
         transition: opacity 0.3s ease;
       }

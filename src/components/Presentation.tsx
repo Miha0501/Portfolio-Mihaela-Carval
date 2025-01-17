@@ -1,5 +1,5 @@
 import Section from './Section';
-import { FaDownload } from 'react-icons/fa';
+import { FaDownload, FaGithub } from 'react-icons/fa';
 import '../sass/presentation.scss';
 
 const Presentation: React.FC = () => {
@@ -11,7 +11,7 @@ const Presentation: React.FC = () => {
                     <FaDownload /> Télécharger CV
                 </button>
                 <button onClick={() => window.open('https://github.com/Miha0501', '_blank', 'noopener,noreferrer')}>
-                    Voir sur GitHub
+                    <FaGithub/> Voir sur GitHub
                 </button>
             </div>
         </Section>
