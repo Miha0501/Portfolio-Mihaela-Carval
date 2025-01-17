@@ -5,7 +5,7 @@ const Footer: React.FC = () => {
   return (
     <footer>
       <div className='all_rights'>
-        <span>© 2025 Created by Mihael@dev.com</span>
+        <span>© 2025 Created by mihaela-dev</span>
       </div>
       <div className='social_links'>
         <p>Suivez-moi sur :</p>
